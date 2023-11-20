@@ -14,8 +14,8 @@
     
 The language accepted by finite automata can be easily described by simple expressions called Regular Expressions. It is the most effective way to represent any language. The languages accepted by some regular expression are referred to as Regular languages. A regular expression can also be described as a sequence of pattern that defines a string. Regular expressions are used to match character combinations in strings. String searching algorithm used this pattern to find the operations on a string.
 
-In a regular expression, x* means zero or more occurrence of x. It can generate {e, x, xx, xxx, xxxx, .....}
-In a regular expression, x+ means one or more occurrence of x. It can generate {x, xx, xxx, xxxx, .....}
+In a regular expression, x* means zero or more occurrence of x. It can generate {e, x, xx, *****, xxxx, .....}
+In a regular expression, x+ means one or more occurrence of x. It can generate {x, xx, *****, xxxx, .....}
   </p>
   <H3>
 Equivalence of Regular Expressions and Finite Automata
@@ -56,6 +56,8 @@ Transitions in the DFA are determined by the transitions of the NFA.
 
 The accepting states of the DFA are determined by the states of the NFA that contain an accepting state.      </P>
          
+         <img src="https://rpruim.github.io/m252/S19/from-class/images/DFA-regex-2.png" width="500px" />
+
 <H3> Regular languages
          </H3>
         <P> Regular languages are formal languages that regular expressions can describe and can also be recognized by finite automata. They are used to define sets of strings, such as sequences of characters or words, that follow specific patterns.
