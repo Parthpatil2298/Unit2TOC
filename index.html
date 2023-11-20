@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <title>Toc Unit-2</title>
+</head>
+
+<body>
+  <h1>
+   Regular Expression
+  </h1>
+  <p>
+    
+The language accepted by finite automata can be easily described by simple expressions called Regular Expressions. It is the most effective way to represent any language. The languages accepted by some regular expression are referred to as Regular languages. A regular expression can also be described as a sequence of pattern that defines a string. Regular expressions are used to match character combinations in strings. String searching algorithm used this pattern to find the operations on a string.
+
+In a regular expression, x* means zero or more occurrence of x. It can generate {e, x, xx, xxx, xxxx, .....}
+In a regular expression, x+ means one or more occurrence of x. It can generate {x, xx, xxx, xxxx, .....}
+  </p>
+  <H3>
+Equivalence of Regular Expressions and Finite Automata
+  </H3>  
+  <P>
+Regular expressions and finite automata are two formalisms used in theoretical computer science to describe regular languages. Regular languages are a subset of formal languages that can be recognized by regular expressions and finite automata. The equivalence between regular expressions and finite automata is a fundamental result known as the Kleene's theorem.
+Kleene's Theorem: Kleene's theorem establishes the equivalence between three different models of computation for regular languages:
+1.	Regular Expressions
+2.	Nondeterministic Finite Automata (NFA)
+3.	Deterministic Finite Automata (DFA)
+The theorem states that for every regular language, there exists a regular expression describing it, and there exists a DFA and an NFA that recognize the same language. Furthermore, any of these models can be converted into any of the others without losing the expressive power of the language.
+Implications:
+1.	Regular Expressions to NFA/DFA: Given a regular expression, you can construct an equivalent NFA or DFA that recognizes the same language.
+2.	NFA/DFA to Regular Expressions: Given an NFA or DFA, you can construct an equivalent regular expression that recognizes the same language.
+3.	NFA to DFA: Given an NFA, you can construct an equivalent DFA that recognizes the same language.
+4.	DFA to NFA: Given a DFA, you can construct an equivalent NFA that recognizes the same language.
+These conversions are not always straightforward, but they can be systematically achieved using various algorithms. The existence of these equivalences is a key reason why regular languages are considered well-defined and amenable to algorithmic solutions.
+In summary, Kleene's theorem establishes the equivalence of regular expressions, NFAs, and DFAs, providing different perspectives for describing and recognizing regular languages.
+  </P>
+  <BR>
+    
+    <P>
+      <B> Regular Expression to DFA Conversions:</B>
+     <BR>
+       <BR>
+Converting a Regular Expression (RE) to a Deterministic Finite Automaton (DFA) involves several steps. The general idea is to construct a state machine that recognizes the language described by the regular expression. Here's a high-level overview of the process:
+
+ Convert the RE to a Non-Deterministic Finite Automaton (NFA):
+Start with the basic building blocks for regular expressions: characters, concatenation, union, and Kleene closure.
+For each character in the regular expression, create a corresponding NFA fragment.
+Combine these fragments using NFA operations for concatenation, union, and closure.
+
+ Convert the NFA to a DFA:
+Use the subset construction algorithm to convert the NFA to a DFA.
+The states of the DFA correspond to sets of states from the NFA.
+Transitions in the DFA are determined by the transitions of the NFA.
+3. Determine Accepting States:
+
+The accepting states of the DFA are determined by the states of the NFA that contain an accepting state.      </P>
+         
+<H3> Regular languages
+         </H3>
+        <P> Regular languages are formal languages that regular expressions can describe and can also be recognized by finite automata. They are used to define sets of strings, such as sequences of characters or words, that follow specific patterns.
+They are important in computer science and theoretical computer science because they form a foundation for understanding the theory of computation and the design of compilers and other software tools.</P>
+       
+
+        <H3> Examples of Regular Languages </H3>
+        
+        <P> Some common examples of regular languages include:
+Binary strings that represent even numbers
+Set of strings that contain exactly two a‘s
+The set of all binary numbers that are divisible by 3
+The set of all strings that contain the substring “01” </P>
+        <H3> Non regular Languages</H3>
+        <P> In the theory of computation, a regular language is a language that can be recognized by a finite automaton. Non-regular languages, on the other hand, cannot be recognized by a finite automaton. There are several examples of non-regular languages, and they often require more computational power than what a finite automaton can provide.</P>
+    <H3> The pumping lemma for regular languages</H3>
+        <P> The Pumping Lemma is a tool commonly used to prove that certain languages are not regular. It states that for any regular language, there exists a "pumping length" such that any string in the language can be pumped (repeated) in a way that the resulting strings are still in the language. If a language does not satisfy the Pumping Lemma, it is not regular.</P>
+
+
+</body>
+
+</html>
